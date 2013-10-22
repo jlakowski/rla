@@ -1,0 +1,41 @@
+#N canvas 752 280 585 427 12;
+#N canvas 0 0 450 300 (subpatch) 0;
+#X array array1 3000 float 2;
+#X coords 0 1 3000 -1 200 140 1 0 0;
+#X restore 351 70 graph;
+#X obj 35 56 soundfiler;
+#X obj 20 279 line~;
+#X obj 20 318 tabread~ array1;
+#X obj 20 392 dac~;
+#X obj 23 361 *~ 6;
+#X msg 20 237 0 \, 44100 1000;
+#X msg 35 25 read woodblock.wav array1;
+#X obj 125 102 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 125 143 metro 500;
+#X obj 213 107 hsl 128 15 100 1000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 10200 1;
+#X obj 214 172 * 0.001;
+#X obj 232 214 /;
+#X floatatom 232 244 5 0 0 0 - - -;
+#X floatatom 237 133 5 0 0 0 - - -;
+#X msg 154 174 60;
+#X obj 132 229 bng 50 250 10 0 empty empty empty 17 7 0 10 -257985
+-1 -1;
+#X text 272 242 bpm;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 5 0 4 0;
+#X connect 5 0 4 1;
+#X connect 6 0 2 0;
+#X connect 7 0 1 0;
+#X connect 8 0 9 0;
+#X connect 9 0 6 0;
+#X connect 9 0 15 0;
+#X connect 9 0 16 0;
+#X connect 10 0 9 1;
+#X connect 10 0 14 0;
+#X connect 11 0 12 1;
+#X connect 12 0 13 0;
+#X connect 14 0 11 0;
+#X connect 15 0 12 0;

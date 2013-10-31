@@ -1,0 +1,17 @@
+#N canvas 1062 163 390 341 12;
+#X obj 129 182 *~ 0.8;
+#X obj 128 153 *~;
+#X obj 210 110 osc~ 1;
+#X floatatom 210 86 5 0 0 0 - - -;
+#X text 59 17 3.6.2.2. Ring modulation live;
+#X text 124 262 www.pd-tutorial.com;
+#X text 142 241 Johannes Kreidler;
+#X obj 127 83 inlet~;
+#X obj 128 211 outlet~;
+#X obj 210 51 inlet;
+#X connect 0 0 8 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 1;
+#X connect 3 0 2 0;
+#X connect 7 0 1 0;
+#X connect 9 0 3 0;

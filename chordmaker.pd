@@ -1,4 +1,4 @@
-#N canvas 43 278 1351 656 12;
+#N canvas 104 299 1351 656 12;
 #X obj 8 2 cnv 15 555 333 empty back empty 20 12 0 14 -262144 -262144
 0;
 #N canvas 0 0 450 300 (subpatch) 0;
@@ -110,7 +110,7 @@
 #X obj 660 -85 int;
 #X obj 284 -143 *~;
 #X obj 348 -107 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 4100 1;
+-1 -1 8800 1;
 #X obj 814 -36 +;
 #X obj 1019 -39 + 7;
 #X msg 800 -139 3;
@@ -274,6 +274,7 @@
 #X connect 95 0 46 0;
 #X connect 95 0 74 0;
 #X connect 96 0 39 0;
+#X connect 97 0 82 0;
 #X connect 99 0 69 0;
 #X connect 99 0 26 0;
 #X connect 100 0 41 0;
@@ -285,10 +286,8 @@
 #X connect 105 0 79 0;
 #X connect 105 0 107 0;
 #X connect 108 0 29 0;
-#X connect 110 0 97 0;
 #X connect 111 0 113 0;
 #X connect 112 0 109 0;
-#X connect 113 0 82 0;
 #X connect 114 0 115 0;
 #X connect 115 0 81 1;
 #X connect 115 0 58 1;
